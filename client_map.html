@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d360862436fb82a578576ef66f22829a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d360862436fb82a578576ef66f22829a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d360862436fb82a578576ef66f22829a = L.map(
+                "map_d360862436fb82a578576ef66f22829a",
+                {
+                    center: [20.5937, 78.9629],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_45550c10d83870e3b8be8dfaa0baba0f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d360862436fb82a578576ef66f22829a);
+        
+    
+            var circle_marker_74bf31d273e0030b6f4e95d707f4ddaa = L.circleMarker(
+                [12.9716, 77.5946],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_d360862436fb82a578576ef66f22829a);
+        
+    
+        var popup_e4f9edad7ea186ff33d2373cd6bd47bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b47c65e6d83eb74d867f339739a487e7 = $(`<div id="html_b47c65e6d83eb74d867f339739a487e7" style="width: 100.0%; height: 100.0%;">Bengaluru, Karnataka, India: 2 people</div>`)[0];
+                popup_e4f9edad7ea186ff33d2373cd6bd47bc.setContent(html_b47c65e6d83eb74d867f339739a487e7);
+            
+        
+
+        circle_marker_74bf31d273e0030b6f4e95d707f4ddaa.bindPopup(popup_e4f9edad7ea186ff33d2373cd6bd47bc)
+        ;
+
+        
+    
+    
+            var circle_marker_c55b2e0b3e0523c0628bd310df39c673 = L.circleMarker(
+                [28.6139, 77.209],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_d360862436fb82a578576ef66f22829a);
+        
+    
+        var popup_cf7edc7818f94a1da969b7509ecee4bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4670c23a9a9dbdaeaa83f9231cbd11c = $(`<div id="html_b4670c23a9a9dbdaeaa83f9231cbd11c" style="width: 100.0%; height: 100.0%;">Delhi, India: 2 people</div>`)[0];
+                popup_cf7edc7818f94a1da969b7509ecee4bd.setContent(html_b4670c23a9a9dbdaeaa83f9231cbd11c);
+            
+        
+
+        circle_marker_c55b2e0b3e0523c0628bd310df39c673.bindPopup(popup_cf7edc7818f94a1da969b7509ecee4bd)
+        ;
+
+        
+    
+    
+            var circle_marker_c83589e7939d24d839ae8d5713aa4c4e = L.circleMarker(
+                [28.4595, 77.0266],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d360862436fb82a578576ef66f22829a);
+        
+    
+        var popup_12fa026bed844a7a8cd0d117a0490c7c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c9c57ac626c313a3b2f21de65639436 = $(`<div id="html_7c9c57ac626c313a3b2f21de65639436" style="width: 100.0%; height: 100.0%;">Gurugram, Haryana, India: 1 people</div>`)[0];
+                popup_12fa026bed844a7a8cd0d117a0490c7c.setContent(html_7c9c57ac626c313a3b2f21de65639436);
+            
+        
+
+        circle_marker_c83589e7939d24d839ae8d5713aa4c4e.bindPopup(popup_12fa026bed844a7a8cd0d117a0490c7c)
+        ;
+
+        
+    
+    
+            var circle_marker_cf6af0be95655153473c93b33067fae1 = L.circleMarker(
+                [26.9124, 75.7873],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d360862436fb82a578576ef66f22829a);
+        
+    
+        var popup_9b54a0ab1243a4233c1249973a53488e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_64feee875a9c7e689888c24a2872e7e1 = $(`<div id="html_64feee875a9c7e689888c24a2872e7e1" style="width: 100.0%; height: 100.0%;">Jaipur, Rajasthan, India: 1 people</div>`)[0];
+                popup_9b54a0ab1243a4233c1249973a53488e.setContent(html_64feee875a9c7e689888c24a2872e7e1);
+            
+        
+
+        circle_marker_cf6af0be95655153473c93b33067fae1.bindPopup(popup_9b54a0ab1243a4233c1249973a53488e)
+        ;
+
+        
+    
+    
+            var circle_marker_257135f525fe3cbce1988380ffb6a144 = L.circleMarker(
+                [17.385, 78.4867],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d360862436fb82a578576ef66f22829a);
+        
+    
+        var popup_b2ce30c2a67ddfd76c27809b6f9fd6fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db247dcb8daae9a418a76ff8153c8d1c = $(`<div id="html_db247dcb8daae9a418a76ff8153c8d1c" style="width: 100.0%; height: 100.0%;">Hyderabad, Telangana, India: 1 people</div>`)[0];
+                popup_b2ce30c2a67ddfd76c27809b6f9fd6fe.setContent(html_db247dcb8daae9a418a76ff8153c8d1c);
+            
+        
+
+        circle_marker_257135f525fe3cbce1988380ffb6a144.bindPopup(popup_b2ce30c2a67ddfd76c27809b6f9fd6fe)
+        ;
+
+        
+    
+</script>
+</html>
